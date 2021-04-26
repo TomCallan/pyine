@@ -77,9 +77,9 @@ class finnhub():
         return result
     
     def stockCandles(self, symbol, resolution, period):
-        to = time.strftime("%Y-%m-%d")
+        to = str(time.time()).split('.')[0]
         period = datetime.timedelta(days = period)
-        fromX = (datetime.datetime.now() - period)
+        fromX = str((datetime.datetime.now() - period).timestamp()).split('.')[0]
         url = self.baseurl + '/stock/candle?symbol={0}&resolution={1}&from={2}&to={3}&token={4}'.format(symbol, resolution, fromX, to, self.token)
         result = requests.get(url).json()
         return result
@@ -104,9 +104,9 @@ class finnhub():
         return result
     
     def forexCandles(self, symbol, resolution, period):
-        to = time.strftime("%Y-%m-%d")
+        to = str(time.time()).split('.')[0]
         period = datetime.timedelta(days = period)
-        fromX = (datetime.datetime.now() - period)
+        fromX = str((datetime.datetime.now() - period).timestamp()).split('.')[0]
         url = self.baseurl + '/stock/candle?symbol={0}&resolution={1}&from={2}&to={3}&token={4}'.format(symbol, resolution, fromX, to, self.token)
         result = requests.get(url).json()
         return result
@@ -129,9 +129,9 @@ class finnhub():
         return result
     
     def cryptoCandles(self, symbol, resolution, period):
-        to = time.strftime("%Y-%m-%d")
+        to = str(time.time()).split('.')[0]
         period = datetime.timedelta(days = period)
-        fromX = (datetime.datetime.now() - period)
+        fromX = str((datetime.datetime.now() - period).timestamp()).split('.')[0]
         url = self.baseurl + '/crypto/candle?symbol={0}&resolution={1}&from={2}&to={3}&token={4}'.format(symbol, resolution, fromX, to, self.token)
         result = requests.get(url).json()
         return result
@@ -154,9 +154,9 @@ class finnhub():
         return result
     
     def technicalIndicators(self, symbol, resolution, fromX, to, indicator, period):
-        to = time.strftime("%Y-%m-%d")
+        to = str(time.time()).split('.')[0]
         period = datetime.timedelta(days = period)
-        fromX = (datetime.datetime.now() - period)
+        fromX = str((datetime.datetime.now() - period).timestamp()).split('.')[0]
         url = self.baseurl + '/indicator?symbol=symbol={0}&resolution={1}&from={2}&to={3}&indicator={4}&timeperiod={5}&token={6}'.format(symbol, resolution, fromX, to, indicator, period ,self.token)
         result = requests.get(url).json()
         return result
