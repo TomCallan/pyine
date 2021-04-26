@@ -10,6 +10,7 @@ Currently Supports
 
 **Warning**
 The current version (1.1.2) will auto comment any strategy calls so it is advised that a study is used instead.
+The most up to date version is not listed on pypi and won't be for a while.
 
 
 ## Usage
@@ -31,3 +32,12 @@ _ = convert(filename)
 from pyine.indicators import *
 ema = ema(close, period)
 ```
+
+### Data Providers
+```
+from pyine.data import *
+finnhub = finnhub()
+finnhub.token = 'YOUR API TOKEN'
+finnhub.stockCandles('TSLA', resolution=5, period=1)
+```
+Full documentation will be added
