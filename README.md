@@ -1,6 +1,11 @@
 # pyine
 A simple package for the conversion of tradingview's .pine to python script. 
 
+## This version is deprecated and will soon be replaced by pyine v2 which hopes to add far more functionality & pyine v5 support
+
+## Currently does not support pyine v4 
+
+
 Currently Supports
  - Variable Decleration ```a = 1```
  - Dynamic Value Assignment ```a = b > c```
