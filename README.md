@@ -1,7 +1,7 @@
 # pyine
 A simple package for the conversion of tradingview's .pine to python script. 
 
-## This version is deprecated and will soon be replaced by pyine v2 which hopes to add far more functionality & pyine v5 support
+## This version is deprecated and will soon be replaced by pyine v2 which hopes to add far more functionality & pine v5 support
 
 ## Currently does not support pyine v4 
 
