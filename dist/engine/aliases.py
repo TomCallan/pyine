@@ -1,0 +1,3 @@
+assignment= {
+    '==': 'TEQUAL',
+}
