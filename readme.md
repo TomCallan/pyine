@@ -785,3 +785,6 @@
 ### weekofyear
 ### year### 
 ]
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=TomCallan/pyine&type=Date)](https://star-history.com/#TomCallan/pyine&Date)
